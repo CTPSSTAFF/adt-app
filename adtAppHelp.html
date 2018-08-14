@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CTPS ADT Data Browser Help</title>
+
+</head>
+
+<body class="help">
+
+  <table class="help" bgcolor="green">
+    <tbody class="help"><tr class="help">
+      <td class="help"><h1 class="help">CTPS ADT Data Browser Help</h1></td>
+    </tr>
+  </tbody></table>
+
+  <br>
+
+  <div id="Note">
+    <strong>
+      The tools/controls of the viewer are located above the map.
+      These controls are used for navigating around the map and 
+      for performing queries of ADT traffic count data.</strong>
+  </div>
+
+  <br>
+  <table class="help">
+
+    <thead class="help">
+      <tr class="help">
+        <td class="help">Tool</td>
+        <td class="help">Symbol</td>
+        <td class="help">Description</td>
+      </tr>
+    </thead>
+
+    <tbody class="help">
+  
+      <tr class="help">
+        <td class="help_tSub" colspan="3"><h2 class="help">Pan/Zoom Tools</h2></td>
+      </tr>
+
+      <tr>
+        <td class="help_tCol1">Pan</td>
+        <td class="help_tCol2">
+          <img src="img/pan_arrow.gif">
+        </td>
+        <td class="help_tCol3">
+          At any time, you can pan the view by clicking and dragging 
+          the map with the four-arrow icon in any direction.
+        </td>
+      </tr>
+
+      <tr class="help">
+        <td class="help_tCol1">Zoom in</td>
+        <td class="help_tCol2">
+          <img src="img/zoom_in.png">
+        </td>
+        <td class="help_tCol3">
+          Zooms in on the position you click or the box you define on the map.
+        </td>
+      </tr>
+
+      <tr>
+        <td class="help_tCol1">Zoom out</td>
+        <td class="help_tCol2">
+          <img src="img/zoom_out.png">
+        </td>
+        <td class="help_tCol3">
+          Zooms out from the position you click or the 
+          area you define on the map.
+        </td>
+      </tr>
+
+      <tr>
+        <td class="help_tCol1">Go to previous extent</td>
+        <td class="help_tCol2">
+          <img src="img/undo.png">
+        </td>
+        <td class="help_tCol3">
+          Zooms back to the previous extent you were viewing. 
+          Use this option to go back to where you were 
+          before you zoomed or panned.
+        </td>
+      </tr>
+	
+      <tr class="help">
+        <td class="help_tCol1">Go to next extent</td>
+        <td class="help_tCol2">
+          <img src="img/redo.png">
+        </td>
+        <td class="help_tCol3">
+          Zooms back to the next extent you were viewing. 
+          Use this option to un-do a Go To Previous
+          Extent operation.
+        </td>
+      </tr>	
+	  
+      <tr class="help">
+        <td class="help_tCol1">Go to initial extent</td>
+        <td class="help_tCol2">
+          <img src="img/globe.png">
+        </td>
+        <td class="help_tCol3">
+          Zooms to the initial extent of the map when
+		  the application was launched.
+        </td>
+      </tr>
+	  
+	  <!-- Addition here: blank "line" -->
+	  <tr class="help">
+        <td class="help_tSub" colspan="3"><h2 class="help"></h2></td>
+      </tr>
+
+      <tr class="help">
+        <td class="help_tSub" colspan="3"><h2 class="help">Show Information Tools</h2></td>
+      </tr>
+
+      <tr "help">
+        <td class="help_tCol1">Query data by drawing a box</td>
+        <td class="help_tCol2">
+          <img src="img/query-region.png">
+        </td>
+        <td class="help_tCol3">
+          Display information on specific traffic count locations
+          on the map by dragging a box around a group of locations
+          with the mouse. The information appears in table form in 
+		  the bottom of the browser window.
+        </td>
+      </tr>
+
+      <tr class="help">
+        <td class="help_tCol1">Query data by submitting a form</td>
+        <td class="help_tCol2">
+          <img src="img/query.gif">
+        </td>
+        <td class="help_tCol3">
+          Find the location on the map of traffic counts meeting 
+          specified criteria.  A search dialog window opens,
+          with controls for choosing the year, town, and route number
+          of traffic counts to be located. After clicking the
+          "Submit Query" button in the search window, locations matching
+          the riteria will be highlighted in yellow on the map.
+        </td>
+      </tr>
+
+      <tr class="help">
+        <td class="help_tCol1">Clear selection</td>
+        <td class="help_tCol2">
+          <img src="img/clear_selection.gif">
+        </td>
+        <td class="help_tCol3">
+          Clear Selection any highlighting shown around traffic count locations.
+        </td>
+      </tr>
+
+      <tr class="help">
+        <td class="help_tSub" colspan="3"><h2 class="help">Other Tools</h2></td>
+      </tr>
+
+      <tr class="help">
+        <td class="help_tCol1">Download data</td>
+        <td class="help_tCol2">
+          <img src="img/download.gif">
+        </td>
+        <td class="help_tCol3">
+          Download either:
+		  (1) a compressed file in ZIP format containing the traffic
+		  count locations visible in the map, along with their
+          associated count data. The locations are provided in shape file 
+		  format (designed by <a href="http://www.esri.com/" target="_blank">
+		  Environmental Systems Research Institute</a>) for use in a wide variety
+		  of geographic information systems software.  Tabular data are provided in 
+		  dBase IV format.
+		  or (2) a CSV file containing only the traffic count data.
+        </td>
+      </tr>
+
+      <tr class="help">
+        <td class="help_tCol1">Help</td>
+        <td class="help_tCol2">
+          <img src="img/help.png">
+        </td>
+        <td class="help_tCol3">
+          Displays this help page. 
+        </td>
+      </tr>
+
+    </tbody>
+
+  </table>
+
+</body>
+</html>
