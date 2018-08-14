@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Average Daily Traffic on Massachusetts Roads</title>
+
+<link rel="stylesheet" type="text/css" href="../../libs/openlayers_addins/scalebar-thin.css"/>
+<!-- *** CSS for ExtJS. *** -->
+<!-- For base library. -->
+<link rel="stylesheet" type="text/css" href="../../libs/extjs/ext-3.4.0/resources/css/ext-all.css" />
+<!-- Page specific: for ExtJS grid. -->
+<style type=text/css>
+    /* style rows on mouseover */
+    .x-grid3-row-over .x-grid3-cell-inner {
+         font-weight: bold;
+    }
+	/* for ExtJS button icons */
+	.buttonIcon {
+		background-repeat:no-repeat;
+	}
+</style>
+
+<!-- CSS for help window. -->
+<link rel="stylesheet" type="text/css" href="adtHelp.css"/>
+
+<!-- JS for Proj4.js -->
+<script type="text/javascript" src="../../libs/proj4js/proj4js-1.1.0/lib/proj4js.js"></script>
+
+<!-- *** Javascript for OpenLayers. *** -->
+<script type="text/javascript" src="../../libs/openlayers/OpenLayers-2.13.1/OpenLayers.js"></script>
+
+<!-- *** Javascript for ExtJS. *** -->
+<script type="text/javascript" src="../../libs/extjs/ext-3.4.0/adapter/ext/ext-base.js"></script>
+<script type="text/javascript" src="../../libs/extjs/ext-3.4.0/ext-all.js"></script>
+
+<!-- *** Javascript for ExtJS Paging Store user extension. -->
+<script type="text/javascript" src="../../libs/extjs-extensions/ext-3.3.1/ux/PagingStore.js"></script>
+
+<!--- *** Javascript for OpenLayers scalebar add-in control. *** -->
+<script type="text/javascript" src="../../libs/openlayers_addins/ScaleBar.js"></script>
+
+<!--- JavaScript for OpenLayers selectbox add-in control. -->
+<script src="../../libs/openlayers_addins/SelectBox.js"></script>
+
+<!-- *** Javascript and CSS for GeoExt. *** -->
+<script type="text/javascript" src="../../libs/GeoExt/GeoExt-1.0/lib/GeoExt.js"></script>
+<link rel="stylesheet" type="text/css" href="../../libs/GeoExt/GeoExt-1.0/resources/css/geoext-all-debug.css"></link>
+
+<script type="text/javascript">
+ 
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39489988-1']);
+  _gaq.push(['_setDomainName', 'ctps.org']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+ 
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+ 
+</script>
+
+<!-- *** Javascript for this application. *** -->
+<script type="text/javascript"src="adtApp.js"></script>
+
+</head>
+
+<body onload="Ext.onReady(function() { CTPS.adtApp.init(); });" >
+<div id="main_panel_div"></div>
+<div id="external_grid_div"></div>
+<div id="help-window" class="x-hidden"></div>
+<div id="download-window" class="x-hidden"></div>
+<div id="form-window"class="x-hidden"></div>
+</body>
+</html>
